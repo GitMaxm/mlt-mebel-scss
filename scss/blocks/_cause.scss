@@ -1,0 +1,32 @@
+.cause {
+    padding-top: 90px;
+    padding-bottom: 45px;
+    background-color: var(--page-bg-blue);
+}
+
+.cause__wrapper {
+    display: grid;
+    grid-template-columns: auto;
+}
+
+.cause__title {
+    color: var(--text-white);
+}
+
+.cause__list {
+    padding: 45px 0;
+
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    gap: 30px;
+}
+.cause__list-item {
+    border-radius: 5px;
+    background-color: var(--text-white);
+    padding: 30px;
+
+    line-height: 1.35;
+}
+.cause__list-title {
+    margin-bottom: 10px;
+}

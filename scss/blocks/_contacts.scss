@@ -1,0 +1,37 @@
+.contacts {
+    padding: 90px 0;
+    background-color: var(--page-bg-blue);
+}
+
+.contacts__wrapper {
+    display: flex;
+    gap: 50px;
+}
+
+.contacts__content {
+    color: var(--text-white);
+    max-width: 500px;
+}
+
+.contacts__content-text {
+}
+
+.contacts__wrapper-img {
+}
+
+.contacts__content-social__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 50px 0;
+
+    .tel {
+        color: var(--text-white);
+        border: 1px solid var(--text-white);
+    }
+}
+
+.contacts__content-social__link:hover {
+    color: var(--accent);
+    border: 1px solid var(--accent);
+}

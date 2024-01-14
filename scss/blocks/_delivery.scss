@@ -1,0 +1,33 @@
+.delivery {
+    padding: 90px;
+}
+
+.delivery__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 90px;
+    column-gap: 30px;
+}
+
+.delivery__grid-img {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.delivery__grid-content {
+    max-width: 500px;
+}
+
+.delivery__grid-text {
+    margin: 30px 0;
+}
+
+.delivery__grid-title {
+    text-transform: uppercase;
+
+    margin-top: 60px;
+}
+
+.delivery__grid-form {
+}
