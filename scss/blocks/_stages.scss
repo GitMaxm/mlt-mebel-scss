@@ -13,6 +13,17 @@
 
     left: 0;
     bottom: 254px;
+
+    @media (max-width: 1000px) {
+        bottom: 241px;
+    }
+
+    @media (max-width: 680px) {
+        bottom: 214px;
+
+        width: 70%;
+        height: 2px;
+    }
 }
 
 .stages::after {
@@ -26,12 +37,33 @@
 
     width: 90%;
     height: 1px;
+
+    @media (max-width: 1000px) {
+        top: 246px;
+    }
+
+    @media (max-width: 824px) {
+        top: 234px;
+    }
+
+    @media (max-width: 713px) {
+        top: 277px;
+    }
+
+    @media (max-width: 680px) {
+        width: 70%;
+        height: 2px;
+    }
 }
 
 .stages__wrapper {
     display: grid;
     grid-template-columns: auto;
     gap: 100px;
+
+    @media (max-width: 1000px) {
+        gap: 86px;
+    }
 }
 
 .stages__title {
@@ -39,15 +71,25 @@
 }
 
 .stages__list {
-    // counter-reset: number;
     display: grid;
     grid-template-columns: repeat(3, auto);
     justify-content: center;
     gap: 70px;
+
+    @media (max-width: 1000px) {
+        gap: 60px;
+    }
+
+    @media (max-width: 902px) {
+        grid-template-columns: repeat(2, auto);
+    }
+
+    @media (max-width: 680px) {
+        grid-template-columns: repeat(1, auto);
+    }
 }
 
 .stages__list-item {
-    // min-height: 100px;
     display: flex;
     flex-direction: column;
     align-content: space-around;
@@ -63,11 +105,19 @@
     &__text {
         font-size: 20px;
         font-weight: 400;
+
+        @media (max-width: 1000px) {
+            font-size: 18px;
+        }
     }
 
     &__number {
         font-size: 50px;
         font-weight: 400;
+
+        @media (max-width: 1000px) {
+            font-size: 45px;
+        }
     }
 }
 
@@ -83,21 +133,3 @@
     height: 20px;
     z-index: 1;
 }
-
-// .stages__list-item::before {
-//     counter-increment: number;
-//     content: "0" counter(number);
-//     position: absolute;
-//     bottom: 0px;
-//     left: -100px;
-//     font-size: 50px;
-//     font-weight: 400;
-// }
-
-// .stages__list-item--even {
-// }
-
-// .stages__list-item.stages__list-item--even::before {
-//     left: auto;
-//     right: 0;
-// }
