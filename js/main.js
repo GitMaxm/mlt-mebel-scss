@@ -1,3 +1,5 @@
+/* ---------------- mobile nav -------------------------- */
+
 function mobileNav() {
     // Mobile nav button
     const navBtn = document.querySelector('.mobile-nav-btn');
@@ -29,3 +31,28 @@ function mobileNav() {
 }
 
 mobileNav();
+
+
+/* ---------------- Swiper -------------------------- */
+
+const swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true, // Включаем зацикливание слайдов
+    autoplay: {
+        delay: 4000, // Увеличьте задержку до 4000 миллисекунд (4 секунды)
+        disableOnInteraction: false,
+    },
+    scrollbar: {
+        el: ".swiper-scrollbar",
+    },
+    speed: 800, // Добавьте параметр speed для настройки времени анимации в миллисекундах
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});

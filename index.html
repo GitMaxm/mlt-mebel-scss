@@ -13,6 +13,10 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
 </head>
 
 <body>
@@ -221,7 +225,7 @@
             </div>
         </section>
 
-        <section class="froze">
+        <!-- <section class="froze">
             <div class="container">
                 <div class="froze__wrapper">
                     <div class="froze__content">
@@ -232,7 +236,33 @@
                     </button>
                 </div>
             </div>
-        </section>
+        </section> -->
+
+        <!-- Slider main container -->
+        <div class="slider">
+            <div class="container">
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/delivery/01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delivery/01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delivery/01.png" alt="">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/delivery/01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-scrollbar"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </div>
 
         <section class="delivery " id="delivery">
             <div class="container">
@@ -327,6 +357,7 @@
     </main>
 
     <script src="./js/main.js"></script>
+
 </body>
 
 </html>

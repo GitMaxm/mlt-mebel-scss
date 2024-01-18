@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Base */ /* Reset and base styles  */
 * {
   padding: 0px;
@@ -678,7 +679,7 @@ img {
 .stages::before {
   position: absolute;
   content: "";
-  background-color: black;
+  background-color: var(--text-color);
   width: 90%;
   height: 1px;
   left: 0;
@@ -716,7 +717,12 @@ img {
 }
 @media (max-width: 713px) {
   .stages::after {
-    top: 277px;
+    top: 235px;
+  }
+}
+@media (max-width: 699px) {
+  .stages::after {
+    top: 278px;
   }
 }
 @media (max-width: 680px) {
@@ -769,6 +775,33 @@ img {
   }
 }
 
+@media (max-width: 902px) {
+  .stages__list::after {
+    position: absolute;
+    content: "";
+    background-color: var(--text-color);
+    top: 444px;
+    right: 0;
+    width: 100%;
+    height: 1px;
+  }
+}
+@media (max-width: 824px) {
+  .stages__list::after {
+    top: 435px;
+  }
+}
+@media (max-width: 699px) {
+  .stages__list::after {
+    top: 476px;
+  }
+}
+@media (max-width: 680px) {
+  .stages__list::after {
+    display: none;
+  }
+}
+
 .stages__list-item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -787,6 +820,11 @@ img {
   border: 2px solid black;
   border-radius: 10px;
   padding: 10px;
+}
+@media (max-width: 680px) {
+  .stages__list-item {
+    margin-left: 40px;
+  }
 }
 @media (max-width: 440px) {
   .stages__list-item {
@@ -847,6 +885,24 @@ img {
   width: 20px;
   height: 20px;
   z-index: 1;
+}
+@media (max-width: 680px) {
+  .stages__list-item::before {
+    top: 55px;
+    left: -40px;
+  }
+}
+
+@media (max-width: 680px) {
+  .stages__list-item::after {
+    position: absolute;
+    content: "";
+    background-color: var(--text-color);
+    width: 1px;
+    height: 225px;
+    left: -31px;
+    top: -45px;
+  }
 }
 
 .cause {
@@ -1319,4 +1375,31 @@ img {
 }
 .mobile-nav__list .active {
   opacity: 0.5;
+}
+
+.slider {
+  padding: 50px 0;
+  position: relative;
+}
+
+.swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+}
+
+/* чтобы изображение было максимального размера внутри слайда */
+.swiper-slide img {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+  margin: auto;
 }
