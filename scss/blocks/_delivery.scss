@@ -1,5 +1,6 @@
 .delivery {
     padding: 90px 0;
+    overflow: hidden;
 
     @media (max-width: 950px) {
         padding: 60px 0;
@@ -40,6 +41,7 @@
 
 .delivery__grid-img {
     display: flex;
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
@@ -70,8 +72,16 @@
     }
 }
 
-@media (max-width: 600px) {
-    .delivery-img-3 {
+.delivery-img-3 {
+    @media (max-width: 1130px) {
+        display: none;
+    }
+
+    @media (max-width: 950px) {
+        display: block;
+    }
+
+    @media (max-width: 600px) {
         display: none;
     }
 }

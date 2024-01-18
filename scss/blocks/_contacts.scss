@@ -12,6 +12,12 @@
         flex-direction: column;
         align-items: center;
     }
+
+    &-img {
+        @media (max-width: 950px) {
+            display: none;
+        }
+    }
 }
 
 .contacts__content {
@@ -28,6 +34,12 @@
     .tel {
         color: var(--text-white);
         border: 1px solid var(--text-white);
+    }
+
+    @media (max-width: 450px) {
+        column-gap: 20px;
+        row-gap: 40px;
+        flex-wrap: wrap;
     }
 }
 
