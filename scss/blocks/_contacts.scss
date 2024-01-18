@@ -6,17 +6,17 @@
 .contacts__wrapper {
     display: flex;
     gap: 50px;
+
+    @media (max-width: 950px) {
+        gap: 40px;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .contacts__content {
     color: var(--text-white);
     max-width: 500px;
-}
-
-.contacts__content-text {
-}
-
-.contacts__wrapper-img {
 }
 
 .contacts__content-social__list {

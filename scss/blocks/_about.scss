@@ -4,6 +4,10 @@
     @media (max-width: 1000px) {
         padding: 60px 0;
     }
+
+    @media (max-width: 550px) {
+        padding: 45px 0;
+    }
 }
 
 .about__wrapper {
@@ -14,6 +18,10 @@
     @media (max-width: 1000px) {
         gap: 40px;
     }
+
+    @media (max-width: 950px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .about__content {
@@ -23,16 +31,15 @@
         max-width: 500px;
     }
 
-    &-text {
-        font-size: 17px;
-        line-height: 1.55;
-        font-weight: 400;
+    @media (max-width: 950px) {
+        max-width: 630px;
+    }
 
+    &-text {
         margin: 40px 0;
 
         @media (max-width: 1000px) {
             margin: 36px 0;
-            font-size: 15px;
         }
     }
 

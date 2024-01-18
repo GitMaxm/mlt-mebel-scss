@@ -4,6 +4,10 @@
     @media (max-width: 1000px) {
         padding: 18px 0;
     }
+
+    @media (max-width: 550px) {
+        padding: 15px 0;
+    }
 }
 
 .header__logo {
@@ -12,12 +16,22 @@
     @media (max-width: 1000px) {
         max-width: 150px;
     }
+
+    @media (max-width: 768px) {
+        max-width: 130px;
+    }
 }
 
 .header__row {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 425px) {
+        gap: 30px;
+        flex-wrap: wrap;
+        column-gap: 10px;
+    }
 }
 
 .header__list {
@@ -46,7 +60,7 @@
 }
 
 .tel {
-    color: #232323;
+    color: var(--text-color);
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
@@ -54,8 +68,8 @@
     padding: 15px 15px;
     border-radius: 30px;
     background-position: center center;
-    border-color: #232323;
-    border: 1px solid #232323;
+    border-color: var(--text-color);
+    border: 1px solid var(--text-color);
 
     @media (max-width: 1229px) {
         font-size: 18px;
@@ -63,6 +77,11 @@
 
     @media (max-width: 950px) {
         order: 2;
+    }
+
+    @media (max-width: 768px) {
+        font-size: 15px;
+        padding: 14px 13px;
     }
 }
 
@@ -85,24 +104,29 @@
         padding-bottom: 50px;
     }
 
+    @media (max-width: 950px) {
+        flex-direction: column;
+    }
+
+    @media (max-width: 550px) {
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+
     &-descr {
         max-width: 500px;
 
         @media (max-width: 1000px) {
             font-size: 35px;
         }
+
+        @media (max-width: 950px) {
+            max-width: 630px;
+        }
     }
 
     &-text {
-        font-size: 18px;
-        line-height: 1.55;
-        font-weight: 400;
-
         margin: 40px 0;
-
-        @media (max-width: 1000px) {
-            font-size: 16px;
-        }
     }
 
     &-work {
@@ -128,6 +152,18 @@
                 @media (max-width: 1000px) {
                     font-size: 33px;
                 }
+
+                @media (max-width: 824px) {
+                    font-size: 31px;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 29px;
+                }
+
+                @media (max-width: 374px) {
+                    font-size: 25px;
+                }
             }
 
             p {
@@ -137,6 +173,14 @@
 
                 @media (max-width: 1000px) {
                     font-size: 15px;
+                }
+
+                @media (max-width: 600px) {
+                    font-size: 14px;
+                }
+
+                @media (max-width: 374px) {
+                    font-size: 12px;
                 }
             }
         }

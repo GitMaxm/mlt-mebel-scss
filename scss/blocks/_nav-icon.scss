@@ -81,11 +81,14 @@
 .mobile-nav-btn {
 	z-index: 999;
 	display: none;
-}
 
-@media (max-width: 950px) {
-	.mobile-nav-btn {
+	@media (max-width: 950px) {
 		display: block;
-		order: 2;
+		order: 9;
+	}
+
+	@media (max-width: 397px) {
+		margin-left: auto;
+		order: 0;
 	}
 }
