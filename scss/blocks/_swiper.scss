@@ -41,7 +41,6 @@
     position: relative;
 }
 
-/* Скрываем стандартные стрелки Swiper */
 .swiper-button-next::after,
 .swiper-button-prev::after {
     color: var(--page-bg-blue);
@@ -52,7 +51,6 @@
     opacity: 0.7;
 }
 
-/* чтобы изображение было максимального размера внутри слайда */
 .swiper-slide img {
     max-width: 100%;
     max-height: 100%;

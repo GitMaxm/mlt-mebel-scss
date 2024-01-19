@@ -38,15 +38,15 @@ mobileNav();
 const swiper = new Swiper(".mySwiper", {
     spaceBetween: 30,
     centeredSlides: true,
-    loop: true, // Включаем зацикливание слайдов
+    loop: true, // Зацикливание слайдов
     autoplay: {
-        delay: 4000, // Увеличьте задержку до 4000 миллисекунд (4 секунды)
+        delay: 4000, // Задержка 4 секунды
         disableOnInteraction: false,
     },
     scrollbar: {
         el: ".swiper-scrollbar",
     },
-    speed: 800, // Добавьте параметр speed для настройки времени анимации в миллисекундах
+    speed: 800, // Параметр speed для настройки времени анимации в миллисекундах
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

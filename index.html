@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>mtl.mebel</title>
+    <title>MLT mebel</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,37 +13,41 @@
         href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="icon" type="image/x-icon" href="img/favicon.ico">
-
+    <!-- swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 
 <body>
 
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__row">
 
+                <!-- logo  -->
                 <div class="header__logo">
                     <a class="header__logo-link" href="#!">
                         <img src="img/logo.svg" alt="logo">
                     </a>
                 </div>
 
-
+                <!-- Мобильная навигация  -->
                 <button class="mobile-nav-btn">
                     <div class="nav-icon"></div>
                 </button>
 
+                <!-- Меню мобильной навигации  -->
                 <div class="mobile-nav">
 
+                    <!-- Лого в мобильной навигации  -->
                     <div class="header__logo">
                         <a class="header__logo-link" href="#!">
                             <img src="img/logo.svg" alt="logo">
                         </a>
                     </div>
 
+                    <!-- Список с ссылками в мобильной навигации  -->
                     <ul class="mobile-nav__list">
                         <li class="mobile-nav__link"><a href="#about">О нас</a></li>
                         <li class="mobile-nav__link"><a href="#!">Материалы</a></li>
@@ -51,12 +55,14 @@
                         <li class="mobile-nav__link"><a href="#delivery">Доставка и оплата</a></li>
                         <li class="mobile-nav__link"><a href="#contacts">Контакты</a></li>
                     </ul>
+
                 </div>
 
+                <!-- Навигация  -->
                 <nav class="nav">
                     <ul class="header__list">
                         <li class="header__list-item"><a class="header__list-link" href="#about">О нас</a></li>
-                        <li class="header__list-item"><a class="header__list-link" href="#!">Материалы</a></li>
+                        <!-- <li class="header__list-item"><a class="header__list-link" href="#!">Материалы</a></li> -->
                         <li class="header__list-item"><a class="header__list-link" href="#stages">Этапы работ</a></li>
                         <li class="header__list-item"><a class="header__list-link" href="#delivery">Доставка и
                                 оплата</a></li>
@@ -64,6 +70,7 @@
                     </ul>
                 </nav>
 
+                <!-- Мобильный телефон -->
                 <div class="header__tel heartbeat">
                     <a class="tel" href="tel: +79684424477">+7 (968) 442-44-77</a>
                 </div>
@@ -71,7 +78,7 @@
             </div>
 
 
-
+            <!-- Контент в шапке  -->
             <div class="header__content">
                 <div class="header__content-descr">
                     <h1 class="title-1 header__content-title"><span class="accent">Мебель на заказ</span> от
@@ -97,9 +104,8 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
+
                 <picture class="header__content-img">
                     <img src="./img/header/closet.png" alt="closet">
                 </picture>
@@ -109,6 +115,7 @@
 
     <main class="main">
 
+        <!-- О компании  -->
         <section class="about" id="about">
             <div class="container">
 
@@ -152,14 +159,7 @@
 
         </section>
 
-        <section class="advantage">
-            <div class="container">
-                <div class="advantage__wrapper">
-
-                </div>
-            </div>
-        </section>
-
+        <!-- Причины  -->
         <section class="cause">
             <div class="container">
                 <div class="cause__wrapper">
@@ -215,6 +215,7 @@
             </div>
         </div>
 
+        <!-- Этапы работы  -->
         <section class="stages" id="stages">
             <div class="container">
                 <div class="stages__wrapper">
@@ -267,15 +268,14 @@
             </div>
         </section> -->
 
-
-
+        <!-- Доставка и оплата  -->
         <section class="delivery " id="delivery">
             <div class="container">
                 <div class="delivery__grid">
 
-                    <div class="delivery__grid-img delivery__grid-img-1">
+                    <picture class="delivery__grid-img delivery__grid-img-1">
                         <img class="delivery-img-1" src="./img/delivery/01.png" alt="мебель">
-                    </div>
+                    </picture>
 
                     <div class="delivery__grid-content ">
                         <p class="text-descr accent">Доставка и оплата</p>
@@ -298,8 +298,6 @@
                             суммы оплачивается вами в день доставки
                         </p>
                         <!-- <p class="delivery__grid-text">Остались вопросы?</p> -->
-
-
                     </div>
 
                     <div class="delivery__grid-img delivery__grid-img-2">
@@ -311,6 +309,7 @@
             </div>
         </section>
 
+        <!-- Подвал, контакты  -->
         <footer class="contacts" id="contacts">
             <div class="container">
                 <div class="contacts__wrapper">
@@ -361,6 +360,8 @@
 
     </main>
 
+    <!-- скрипты  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./js/main.js"></script>
 
 </body>
