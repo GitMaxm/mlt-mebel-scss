@@ -47,10 +47,6 @@ const swiper = new Swiper(".mySwiper", {
         el: ".swiper-scrollbar",
     },
     speed: 800, // Добавьте параметр speed для настройки времени анимации в миллисекундах
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-    },
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
